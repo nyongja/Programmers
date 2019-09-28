@@ -22,7 +22,6 @@ void dfs( vector<string> route, vector<vector<string>> tickets, bool check[]){
 
 vector<string> solution(vector<vector<string>> tickets){
     vector<string>route;
-    
     for (int i = 0 ; i < tickets.size(); i++){
         bool check[10000] = {false, };
         if(tickets[i][0] == "ICN"){
@@ -40,7 +39,8 @@ vector<string> solution(vector<vector<string>> tickets){
 
 int main(){  
     //vector<string> answer = solution({{"ICN", "JFK"}, {"HND", "IAD"}, {"JFK", "HND"}});
+    vector<string> answer2 = solution({{"ICN", "FFF"}, {"FFF", "ICN"}});
     vector<string> answer1 = solution({{"ICN", "SFO"}, {"ICN", "ATL"}, {"SFO", "ATL"}, {"ATL", "ICN"}, {"ATL", "SFO"}});
-    for (int i = 0 ; i < answer1.size(); i++)
-        cout<<answer1[i]<<" ";
+    for (int i = 0 ; i < answer2.size(); i++)
+        cout<<answer2[i]<<" ";
 }
