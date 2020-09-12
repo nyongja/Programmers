@@ -10,3 +10,4 @@
 - [Sorting]
 
 ### Python
+- [Greedy](https://github.com/nyongja/Programmers/tree/master/Greedy/Python)
