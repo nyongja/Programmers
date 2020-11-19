@@ -13,3 +13,4 @@
 - [Greedy](https://github.com/nyongja/Programmers/tree/master/Greedy/Python)
 - [BFS_DFS](https://github.com/nyongja/Programmers/tree/master/BFS_DFS/Python)
 - [Binary Search](https://github.com/nyongja/Programmers/tree/master/Binary%20Search)
+- [Dynamic Programming](https://github.com/nyongja/Programmers/tree/master/Dynamic%20Programming/Python)
