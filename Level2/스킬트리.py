@@ -2,7 +2,7 @@ def solution(skill, skill_trees):
     answer = 0
     
     # 각 스킬 레벨 정리
-    skill_dict = dict()
+    skill_dict = dict() # CBD
     for idx, value in enumerate(skill) :
         skill_dict[value] = idx
     
