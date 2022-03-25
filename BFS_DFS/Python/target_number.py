@@ -1,8 +1,5 @@
 from collections import deque
 
-
-from collections import deque
-
 def solution(numbers, target):
     def bfs(start) :
         answer = 0
@@ -37,7 +34,7 @@ def solution(numbers, target):
     #answer = dfs(0, -1)
     
     return answer
-    
+
 # def solution(numbers, target):
 #     answer = 0
 
