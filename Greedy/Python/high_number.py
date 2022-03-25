@@ -1,4 +1,3 @@
-
 def solution(number, k):
     remove_idx = 0
     while k > 0 :
@@ -8,8 +7,9 @@ def solution(number, k):
                 number = number[:idx1] + number[idx2:]
                 remove_idx = idx1-1
                 break
+            idx1 = idx2
         else : 
-            number = number[:-1]
+            return number[:len(number)-k]
         k -= 1
     return number
 
