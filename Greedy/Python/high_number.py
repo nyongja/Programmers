@@ -1,20 +1,16 @@
+
 def solution(number, k):
-    answer = ''
-    stack = [number[0]]
-    for num in number[1:] :
-        while len(stack) > 0 and stack[-1] < num and k > 0 :
-            stack.pop()
-            k -= 1
-        stack.append(num)
-    if k != 0 :
-        stack = stack[:-k]
-    
-    answer = answer.join(stack)
-    return answer
+    remove_idx = 0
+    while k > 0 :
+        idx1 = max(0, remove_idx)
+        for idx2 in range(idx1+1, len(number)) : # 비교할 인덱스
+            if int(number[idx1]) < int(number[idx2]) :
+                number = number[:idx1] + number[idx2:]
+                remove_idx = idx1-1
+                break
+        else : 
+            number = number[:-1]
+        k -= 1
+    return number
 
-
-
-if __name__ == "__main__" :
-    number = input()
-    k = int(input())
-    print(solution(number, k))
+print(solution("999", 2))
